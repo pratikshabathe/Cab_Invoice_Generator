@@ -14,4 +14,13 @@ public class CabInvoiceGeneratorTest {
 		Assertions.assertEquals(50, fare);
 		}
 
+	@Test
+	public void  givenDistanceAndTime_ShouldReturnMultipleRides() {
+		CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
+		double distance = 4.0;
+		int time = 10;
+		double fare = cabInvoiceGenerator.multipleRides(distance, time);
+		Assertions.assertEquals(50, fare);
+		}
+
 }
